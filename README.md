@@ -111,10 +111,8 @@ Train 3 models
 
 Model Evaluation
 
-Model	Accuracy	Precision	Recall	F1-score	ROC-AUC	PR-AUC
-Gradient-Boosted Trees	0.7979	0.5152	0.0142	0.0277	0.6845	0.3257
-Random Forest	0.7978	0.0000	0.0000	0.0000	0.6674	0.3127
-Logistic Regression	0.7976	0.3333	0.0008	0.0017	0.6289	0.2795
+![alt text](readme_img/image9.png)
+![alt text](readme_img/image10.png)
 
 After inspecting errors Select Best model
 ![alt text](readme_img/image8.png)
