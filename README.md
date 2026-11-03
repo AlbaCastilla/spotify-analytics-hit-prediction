@@ -102,3 +102,21 @@ Using PySpark and Spark MLlib, three different classification algorithms are tra
     - PR-AUC: Measures the trade-off between precision and recall across different thresholds. It is particularly useful when the classes are imbalanced, as in this project, where hits represent approximately 20% of the tracks.
 - Error Analysis: Uses confusion matrices to identify true positives, true negatives, false positives and false negatives. It also examines individual misclassified tracks to understand where and why the models make incorrect predictions.
 - Model Selection: Selected the best-performing model based on PR-AUC. Since the dataset is imbalanced, accuracy alone can be misleading: a model could achieve high accuracy simply by predicting that most tracks are non-hits. PR-AUC focuses on how effectively the model identifies the minority class (hits), balancing precision and recall. Therefore, it is a more relevant primary selection metric for this classification task.
+
+Separate train and test
+![alt text](readme_img/image6.png)
+
+Train 3 models
+![alt text](readme_img/image7.png)
+
+Model Evaluation
++----------------------+------------------+------------------+--------------------+--------------------+------------------+-------------------+
+|model                 |accuracy          |precision         |recall              |f1                  |roc_auc           |pr_auc             |
++----------------------+------------------+------------------+--------------------+--------------------+------------------+-------------------+
+|Gradient-Boosted Trees|0.7979450121379777|0.5151515151515151|0.01423785594639866 |0.027709861450692742|0.6844900202188022|0.32574007630328633|
+|Random Forest         |0.7977756450064925|0.0               |0.0                 |0.0                 |0.6674191177780883|0.3126780960890926 |
+|Logistic Regression   |0.797606277875007 |0.3333333333333333|8.375209380234506E-4|0.001670843776106934|0.6289340497848539|0.2794746759891191 |
++----------------------+------------------+------------------+--------------------+--------------------+------------------+-------------------+
+
+After inspecting errors Select Best model
+![alt text](readme_img/image8.png)
